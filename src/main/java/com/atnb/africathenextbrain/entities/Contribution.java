@@ -7,6 +7,7 @@ import lombok.ToString;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Date;
 
 @Entity
 @Data @NoArgsConstructor @AllArgsConstructor @ToString
@@ -17,5 +18,6 @@ public class Contribution implements Serializable {
     private String message;
     private String signature;
     private String domaine;
+    private Date date_contrib;
     private int  etat;
 }

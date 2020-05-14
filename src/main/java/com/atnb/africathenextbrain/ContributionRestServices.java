@@ -15,7 +15,7 @@ public class ContributionRestServices {
     //liste contribution
     @GetMapping(value = "/listContributions")
     public List<Contribution> listContribution(){
-        return contributionRepository.findAll();
+        return contributionRepository.findAllByDateDesc();
     }
 
     //details contribution
