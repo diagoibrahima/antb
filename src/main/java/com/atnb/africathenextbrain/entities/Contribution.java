@@ -18,6 +18,7 @@ public class Contribution implements Serializable {
     private String message;
     private String signature;
     private String domaine;
+    private String profilRs;
     private Date date_contrib;
     private int  etat;
 }
