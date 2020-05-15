@@ -22,4 +22,12 @@ public interface ContributionRepository extends JpaRepository<Contribution, Long
     @RestResource(path = "/byMessagePage")
     public Page<Contribution> findByMessageContains(@Param("mc") String cont, Pageable pageable);
 
+    @RestResource(path = "/byDomainePage")
+    public Page<Contribution> findByDomaineContains(@Param("mc") String cont, Pageable pageable);
+
+
+
+
+
+
 }
