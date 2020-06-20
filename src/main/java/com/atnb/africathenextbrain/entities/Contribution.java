@@ -20,5 +20,7 @@ public class Contribution implements Serializable {
     private String domaine;
     private String profilRs;
     private Date date_contrib;
+    private String idUser;
+
     private int  etat;
 }
